@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es" >
+  <head>
+    <meta charset="UTF-8">
+    <title>tarea7</title>
+  </head>
+  <body>
+
+     <canvas class="canva" id="canva0" onclick="changeColor(this.id)" >
+	 </canvas>
+	 <canvas class="canva" id="canva1" onclick="changeColor(this.id)" >
+	 </canvas>
+	 <canvas class="canva" id="canva2" onclick="changeColor(this.id)" >
+	 </canvas>
+	 <canvas class="canva" id="canva3" onclick="changeColor(this.id)" >
+	 </canvas>
+	 <canvas class="canva" id="canva4" onclick="changeColor(this.id)" >
+	 </canvas>
+	 <canvas class="canva" id="canva5" onclick="changeColor(this.id)" >
+	 </canvas>
+
+	 <div class="separate" >
+		 <canvas class="canva" id="canva6"  onclick="changeColor(this.id)">
+		 </canvas>
+		 <canvas class="canva" id="canva7" onclick="changeColor(this.id)">
+		 </canvas>
+		 <canvas class="canva" id="canva8" onclick="changeColor(this.id)">
+		 </canvas>
+		 <canvas class="canva" id="canva9" onclick="changeColor(this.id)" >
+	 	 </canvas>
+		 <canvas class="canva" id="canva10" onclick="changeColor(this.id)" >
+		 </canvas>
+		 <canvas class="canva" id="canva11" onclick="changeColor(this.id)" >
+		 </canvas>
+	 </div>
+
+	 <div class="separate" >
+		 <canvas class="canva" id="canva12"  onclick="changeColor(this.id)">
+		 </canvas>
+		 <canvas class="canva" id="canva13" onclick="changeColor(this.id)">
+		 </canvas>
+		 <canvas class="canva" id="canva14" onclick="changeColor(this.id)">
+		 </canvas>
+		 <canvas class="canva" id="canva15" onclick="changeColor(this.id)" >
+	 	 </canvas>
+		 <canvas class="canva" id="canva16" onclick="changeColor(this.id)" >
+		 </canvas>
+		 <canvas class="canva" id="canva17" onclick="changeColor(this.id)" >
+		 </canvas>
+	 </div>
+
+	 <div class="separate" >
+		 <canvas class="canva" id="canva18"  onclick="changeColor(this.id)">
+		 </canvas>
+		 <canvas class="canva" id="canva19" onclick="changeColor(this.id)">
+		 </canvas>
+		 <canvas class="canva" id="canva20" onclick="changeColor(this.id)">
+		 </canvas>
+		 <canvas class="canva" id="canva21" onclick="changeColor(this.id)" >
+	 	 </canvas>
+		 <canvas class="canva" id="canva22" onclick="changeColor(this.id)" >
+		 </canvas>
+		 <canvas class="canva" id="canva23" onclick="changeColor(this.id)" >
+		 </canvas>
+	 </div>
+
+  </body>
+
+  <script>
+
+	function changeColor(id)
+	{
+		
+		var c = document.getElementById(id);
+		var ctx = c.getContext("2d");
+		if(ctx.fillStyle == "#000000" || ctx.fillStyle == "#8b008b") 
+		{
+			ctx.fillStyle = "#dc143c"; //red
+			console.log("red");
+		}
+		else{
+			
+			if (  ctx.fillStyle == "#dc143c" )
+			{
+				console.log("orange");
+				ctx.fillStyle = "#ffa500"; //orange
+			}
+			else if ( ctx.fillStyle == "#ffa500"  )
+			{
+				console.log("yellow");
+				ctx.fillStyle = "#ffff00"; //yellow
+			}
+			else if (   ctx.fillStyle == "#ffff00"  )
+			{
+				console.log("green");
+				ctx.fillStyle = "#008000"; //green
+			}
+			else if (  ctx.fillStyle == "#008000"  )
+			{
+				console.log("skyblue");
+				ctx.fillStyle = "#00bfff"; //skyblue
+			}
+			else if (   ctx.fillStyle == "#00bfff"  )
+			{
+				console.log("blue");
+				ctx.fillStyle = "#2f4f4f"; //blue
+			}
+			else if (   ctx.fillStyle == "#2f4f4f"  )
+			{
+				console.log("purple");
+				ctx.fillStyle = "#8b008b"; //purple
+			}
+		}
+
+		ctx.fillRect(0,0,300,150);
+
+	}
+
+	
+
+  </script>
+
+</html>
